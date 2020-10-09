@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Python疑难杂症 | For Me</title>
+  
+  
+  
+  <!--link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css"-->
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body>
+<div class="Shell">
+    <aside class='SideBar'>
+    <section class='avatar' style="background-image: url()">
+        <div class='av-pic' style="background-image: url()">
+        </div>
+    </section>
+    <section class='menu'>
+        <div>For Me</div>
+        
+            <div>World still owns something.</div>
+        
+        <ul>
+          
+            <a href="/" class="Btn">
+              <li>Home</li>
+            </a>  
+          
+            <a href="/archives/" class="Btn">
+              <li>Archive</li>
+            </a>  
+          
+        </ul>
+    </section>
+    <section class="media">
+        
+    </section>
+</aside>
+
+    <div class="container">
+        <div data-pager-shell>
+            <div>
+  <article class='ContentView'>
+    <header class='PageTitle'>
+        <h1>Python疑难杂症</h1>
+    </header>
+
+    <section>
+      <h2 id="数据篇"><a href="#数据篇" class="headerlink" title="数据篇"></a>数据篇</h2><h3 id="读取excel文件想重命名列"><a href="#读取excel文件想重命名列" class="headerlink" title="读取excel文件想重命名列"></a>读取excel文件想重命名列</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">EntInfo2=pd.read_excel(<span class="string">&#x27;xxx.xlsx&#x27;</span>,sheet_name=<span class="string">&#x27;xxx&#x27;</span>)</span><br><span class="line"><span class="comment"># 重新命名家names=[&#x27;..&#x27;，&#x27;..&#x27;]，索引列index_col=&#x27;...&#x27;，指定读取列usecols=[.,.,.]</span></span><br></pre></td></tr></table></figure>
+
+<p>+=和*=可以用</p>
+<h2 id="绘图篇"><a href="#绘图篇" class="headerlink" title="绘图篇"></a>绘图篇</h2><h3 id="图表中文显示乱码"><a href="#图表中文显示乱码" class="headerlink" title="图表中文显示乱码"></a>图表中文显示乱码</h3><p>使用Jupyter Notebook的时候发现图标上都是□□□□。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">plt.rcParams[<span class="string">&#x27;font.sans-serif&#x27;</span>]=[<span class="string">&#x27;SimHei&#x27;</span>]</span><br><span class="line">plt.rcParams[<span class="string">&#x27;axes.unicode_minus&#x27;</span>]=<span class="literal">False</span></span><br></pre></td></tr></table></figure>
+
+
+
+      
+
+    </section>
+    
+      <section class='ArticleMeta'>
+          <div>
+            发布于&nbsp;
+            <time datetime="2020-09-12T06:30:58.000Z" itemprop="datePublished">
+              2020-09-12
+            </time>
+          </div>
+          
+      </section>
+    
+    
+</article>
+
+  
+</div>
+
+            <footer>
+    <div>© 2020 - Hugh Qi </div>
+    <div>
+        <span>
+            Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
+        </span>
+        ,
+        <span>
+            Theme - <a target="_blank" rel="noopener" href="https://github.com/nameoverflow/hexo-theme-icalm">Icalm</a>
+        </span>
+    </div>
+</footer>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/pager/dist/singlepager.js"></script>
+
+<script>
+var sp = new Pager('data-pager-shell')
+
+</script>
+</body>
+</html>
